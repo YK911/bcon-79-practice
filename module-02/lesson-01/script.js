@@ -130,19 +130,17 @@ const out8 = document.querySelector(".out-8");
 
 btn8.onclick = f8;
 function f8() {
-  let selVal = +sel8.value;
+  const selVal = +sel8.value;
 
   switch (selVal) {
     case 1:
-      out8.textContent = "1";
+      out8.textContent = "one";
       break;
     case 2:
-      out8.textContent = "2";
+      out8.textContent = "two";
       break;
     case 3:
-      out8.textContent = "3";
-    default:
-      break;
+      out8.textContent = "three";
   }
 }
 // Task 9
@@ -198,6 +196,7 @@ const btn12 = document.querySelector(".b-12");
 const out12 = document.querySelector(".out-12");
 
 btn12.onclick = f12;
+
 function f12() {
   const inputVal = input12.value;
   out12.textContent = typeof input12.value;
@@ -220,5 +219,50 @@ function f13() {
 // Task 14
 // Дано input .i-141 і .i-142, [type=number]. Дано select .s-143, який містить чотири операції - +, -, *, / . Дана кнопка b-14, при натисканні на яку спрацьовує функція f14. Функція виводить в .out-14 результат операцій, обраних в 3-му select, до чисел, введених в першому і другому input. Наприклад вибрано 1 13 +, потрібно вивести результат операції 1+13 тобто 14.
 
+const input141 = document.querySelector(".i-141");
+const input142 = document.querySelector(".i-142");
+const sel14 = document.querySelector(".s-143");
+const btn14 = document.querySelector(".b-14");
+const out14 = document.querySelector(".out-14");
+btn14.onclick = f14;
+
+function f14() {
+  const num1 = +input141.value;
+  const num2 = +input142.value;
+  let result;
+  // out14.textContent = +input141.value  +input142.value;
+  switch (sel14.value) {
+    case "+":
+      result = num1 + num2;
+      break;
+    case "-":
+      result = num1 - num2;
+      break;
+    case "*":
+      result = num1 * num2;
+      break;
+    case "/":
+      result = num1 / num2;
+      break;
+  }
+  out14.textContent = result;
+}
 // Task 15
 // Дано select .s-151 і .s-152, кожен з яких містить 1 і 0. Дано select .s-153, який містить дві операції - && і || . Дана кнопка .b-15, при натисканні на яку спрацьовує функція f15. Функція виводить в .out-15 результат логічних операцій, обраних в 3 select, до чисел, обраних в першому і другому select. Наприклад, вибрано 1 1 &&, потрібно вивести результат операції 1&&1 тобто 1 або 0.
+const sel151 = document.querySelector(".s-151");
+const sel152 = document.querySelector(".s-152");
+const sel153 = document.querySelector(".s-153");
+const btn15 = document.querySelector(".b-15");
+const out15 = document.querySelector(".out-15");
+
+btn15.onclick = f15;
+
+function f15() {
+  let result;
+  if (sel153.value === "&&") {
+    result = +sel151.value && +sel152.value;
+  } else if (sel153.value === "||") {
+    result = +sel151.value || +sel152.value;
+  }
+  out15.textContent = result;
+}
