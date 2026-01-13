@@ -124,6 +124,27 @@ function f7() {
 // Task 8.
 // Дано select s-8, який містить 3 значення: 1, 2, 3. Дана кнопка b-8. При її натисканні спрацьовує функція f8. Функція повинна отримати обране в select число, потім за допомогою switch case порівняти його по черзі з 1, 2, 3. І якщо вибрано число 1, то вивести в .out-8 рядок one, якщо 2 - two, якщо 3 - three. Нагадую - це програмування. Як зазначено в завданні - так і виводимо. Тобто Three з великої літери - помилка!
 
+const sel8 = document.querySelector(".s-8");
+const btn8 = document.querySelector(".b-8");
+const out8 = document.querySelector(".out-8");
+
+btn8.onclick = f8;
+function f8() {
+  let selVal = +sel8.value;
+
+  switch (selVal) {
+    case 1:
+      out8.textContent = "1";
+      break;
+    case 2:
+      out8.textContent = "2";
+      break;
+    case 3:
+      out8.textContent = "3";
+    default:
+      break;
+  }
+}
 // Task 9
 // Є input з класом .i-9, куди користувач може ввести номер квартири. Є кнопка .b-9, яка запускає функцію f9. Функція повинна вивести в .out-9 номер під'їзду, в якому знаходиться квартира.
 //  якщо від 1 включно до 32 включно - то вивести цифру 1
@@ -131,17 +152,70 @@ function f7() {
 //  якщо від 44 (включно) до 64 (включно) - то 3.
 //  В іншому випадку, вивести 0.
 
+const input9 = document.querySelector(".i-9");
+const btn9 = document.querySelector(".b-9");
+const out9 = document.querySelector(".out-9");
+
+btn9.onclick = f9;
+
+function f9() {
+  if (+input9.value >= 1 && +input9.value <= 32) {
+    out9.textContent = 1;
+    console.log(out9);
+  } else if (+input9.value >= 3 && +input9.value <= 43) {
+    out9.textContent = 2;
+  } else if (+input9.value >= 44 && +input9.value <= 64) {
+    out9.textContent = 3;
+  } else {
+    out9.textContent = 0;
+  }
+}
+
 // Task 10
 // Дано select .s-100. Після натискання кнопки, виведіть value обраного option в .out-10.
+const sel10 = document.querySelector(".s-100");
+const out10 = document.querySelector(".out-10");
+const btn10 = document.querySelector(".b-10");
 
+btn10.onclick = f10;
+function f10() {
+  out10.textContent = sel10.value;
+}
 // Task 11
 // Дано select .s-110. При зміні стану select (подія onchange) виведіть value обраного option в .out-11.
 
+const sel11 = document.querySelector(".s-110");
+const out11 = document.querySelector(".out-11");
+
+sel11.onchange = function f11() {
+  out11.textContent = sel11.value;
+};
 // Task 12
 // Дано input .i-120. Після натискання кнопки отримайте значення з input в змінну, а потім виведіть в .out-12 typeof отриманої змінної. Typeof дозволяє визначити тип даних.
 
+const input12 = document.querySelector(".i-120");
+const btn12 = document.querySelector(".b-12");
+const out12 = document.querySelector(".out-12");
+
+btn12.onclick = f12;
+function f12() {
+  const inputVal = input12.value;
+  out12.textContent = typeof input12.value;
+}
+
 // Task 13
 // Дано input i-130. На відміну від попереднього завдання - input[type="number"]. Після натискання кнопки отримайте значення з input в змінну, а потім виведіть в out-13 typeof отриманої змінної. Typeof дозволяє визначити тип даних. Якщо ви правильно все зробили - то дивно, але тип даних буде string! Подумайте чому так?
+
+const input13 = document.querySelector(".i-130");
+const btn13 = document.querySelector(".b-13");
+const out13 = document.querySelector(".out-13");
+
+btn13.onclick = f13;
+
+function f13() {
+  const inputVal = input13.value;
+  out13.textContent = typeof input13.value;
+}
 
 // Task 14
 // Дано input .i-141 і .i-142, [type=number]. Дано select .s-143, який містить чотири операції - +, -, *, / . Дана кнопка b-14, при натисканні на яку спрацьовує функція f14. Функція виводить в .out-14 результат операцій, обраних в 3-му select, до чисел, введених в першому і другому input. Наприклад вибрано 1 13 +, потрібно вивести результат операції 1+13 тобто 14.
