@@ -66,6 +66,7 @@ document.querySelector("div.out-16").textContent = `${x1 + x2}`;
 //17
 const out17 = document.querySelector("div.out-17");
 console.log("🚀 ~ out17:", out17);
+console.dir(out17);
 
 //18
 let out18 = document.querySelector("div.out-18");
