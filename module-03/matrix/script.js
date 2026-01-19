@@ -126,5 +126,32 @@ function fn8() {
   }
 }
 // Task 9
+const btn9 = document.querySelector(".b-9");
+const out9 = document.querySelector(".out-9");
 
+btn9.onclick = fn9;
+function fn9() {
+  for (let i = 1; i < 7; i++) {
+    for (let j = 1; j < 7; j++) {
+      if (i === j) {
+        break;
+      }
+      out9.innerHTML += `${j}_`;
+    }
+    out9.innerHTML += "<br>";
+  }
+}
 // Task 10
+
+const btn10 = document.querySelector(".b-10");
+const out10 = document.querySelector(".out-10");
+
+btn10.onclick = fn10;
+function fn10() {
+  for (let i = 0; i <= 4; i++) {
+    for (let j = 0; j <= 50; j++) {
+      out10.innerHTML += `${j}_`;
+    }
+    out10.innerHTML += "<br>";
+  }
+}
