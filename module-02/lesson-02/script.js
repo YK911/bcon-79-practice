@@ -2,18 +2,18 @@
 // Кнопка .b-1 запускає функцію fn1. Функція повинна виводити в .out-1 рядок вигляду:
 //1_2_3_4_5_6_7_8_9_10_11_12_13_14_15_16_
 //.out-1 рядок вигляду
-const btn1 = document.querySelector(".b-1");
-const out1 = document.querySelector(".out-1");
-btn1.onclick = f1;
+// const btn1 = document.querySelector(".b-1");
+// const out1 = document.querySelector(".out-1");
+// btn1.onclick = f1;
 
-function f1() {
-let result = "";
-for (let i = 1; i <= 16; i+=1) {
-console.log(i);
-result += `${i}_`;
-}
-out1.textContent = result;
-}
+// function f1() {
+// let result = "";
+// for (let i = 1; i <= 16; i+=1) {
+// console.log(i);
+// result += `${i}_`;
+// }
+// out1.textContent = result;
+// }
 
 // Роздільник - нижнє підкреслення. Завдання вирішується за допомогою циклу.
 const btn1 = document.querySelector(".b-1");
@@ -28,7 +28,7 @@ function fn1() {
 }
 
 const btn1 = document.querySelector(".b-1");
-const out1 = document.querySelector(".out-1");
+// const out1 = document.querySelector(".out-1");
 
 btn1.onclick = fn1;
 
@@ -45,7 +45,7 @@ function fn1() {
 //     12_14_16_18_20_22_24_26_28_30_32_34_36_38_
 // Роздільник - нижнє підкреслення. Завдання вирішується за допомогою циклу.
 const btn2 = document.querySelector(".b-2");
-const out2 = document.querySelector(".out-2");
+// const out2 = document.querySelector(".out-2");
 btn2.onclick = fn2;
 function fn2() {
   let result = "";
@@ -114,17 +114,16 @@ const out25 = document.querySelector(".out-5");
 btn5.onclick = f5;
 
 function fn5() {
-let result4 = "";
-for (let i = 1; i>=17; i++) {
-if (i % 2 === 0) {
-result5 += `${i}_**`;
-} else {
-result5 += `${i}_*`;
+  let result4 = "";
+  for (let i = 1; i >= 17; i++) {
+    if (i % 2 === 0) {
+      result5 += `${i}_**`;
+    } else {
+      result5 += `${i}_*`;
+    }
+  }
+  out5.textContent = result4;
 }
-}
-out5.textContent = result4;
-}
-
 
 const btn5 = document.querySelector(".b-5");
 const out5 = document.querySelector(".out-5");
@@ -204,16 +203,15 @@ const input82 = document.querySelector(".i-82");
 btn8.onclick = f8;
 
 function f8() {
-for (let i = 0; i < array.length; i++) {
-let result = "";
-let res1 = +input81.value;
-let res2 = +input82.value;
-for (let i = res1; i <= res2; i++) {
-result += `${i}_`;
-}
-out28.textContent = result;
-}
-
+  for (let i = 0; i < array.length; i++) {
+    let result = "";
+    let res1 = +input81.value;
+    let res2 = +input82.value;
+    for (let i = res1; i <= res2; i++) {
+      result += `${i}_`;
+    }
+    out28.textContent = result;
+  }
 }
 
 // 2 sposib
@@ -229,23 +227,22 @@ out28.textContent = result;
 //  }
 //  document.querySelector(".b-8").onclick = fn8;
 
+// const btn8 = document.querySelector(".b-8");
+// const out8 = document.querySelector(".out-8");
+// const input81 = document.querySelector(".i-81");
+// const input82 = document.querySelector(".i-82");
 
-const btn8 = document.querySelector(".b-8");
-const out8 = document.querySelector(".out-8");
-const input81 = document.querySelector(".i-81");
-const input82 = document.querySelector(".i-82");
+// btn8.onclick = fn8;
 
-btn8.onclick = fn8;
-
-function fn8() {
-  let result = "";
-  let res1 = +input81.value;
-  let res2 = +input82.value;
-  for (let i = res1; i <= res2; i++) {
-    result += `${i}_`;
-  }
-  out8.textContent = result;
-}
+// function fn8() {
+//   let result = "";
+//   let res1 = +input81.value;
+//   let res2 = +input82.value;
+//   for (let i = res1; i <= res2; i++) {
+//     result += `${i}_`;
+//   }
+//   out8.textContent = result;
+// }
 
 //  Task 9
 // Є input .i-91 та .i-92, куди користувач може ввести числа.
@@ -257,13 +254,6 @@ function fn8() {
 // Завдання вирішується за допомогою циклу. Підказка - спочатку робимо перевірку, а потім запускаємо цикл.
 // цикл - один
 //в інпут клієнт може ввести не в тому порядку що ми очікуємо а навпаки
-
-const btn9 = document.querySelector(".b-9");
-const out29 = document.querySelector(".out-9");
-const input91 = document.querySelector(".i-91");
-const input92 = document.querySelector(".i-92");
-btn9.onclick = fn9;
-
 
 const btn9 = document.querySelector(".b-9");
 const out9 = document.querySelector(".out-9");
@@ -290,33 +280,33 @@ function fn9() {
   for (let i = start; i <= end; i++) {
     result += `${i}_`;
   }
-  
+
   out9.textContent = result;
 }
 // for (let i = res1; i <= res2 ; i++) {
-  //   if (i<=0 ) {
-  //      result += `${i}_`;
-  //   } else if (res1 > res2){
-  //     result += `${i}_`;
-  //   }
+//   if (i<=0 ) {
+//      result += `${i}_`;
+//   } else if (res1 > res2){
+//     result += `${i}_`;
+//   }
 
-  // }
+// }
 
 //  Task 10
 // Кнопка .b-10 запускає функцію fn10. Функція повинна виводити в .out-10 парні роки від 1950 до 1970 включно.
 // Роздільник - знак підкреслення. Завдання вирішується через цикл, а парність - через крок (рівний 2).
 
 function fn10() {
-  let result = '';
+  let result = "";
 
   for (let year = 1950; year <= 1970; year += 2) {
-    result += year + '_';
+    result += year + "_";
   }
 
-  document.querySelector('.out-10').textContent = result;
+  document.querySelector(".out-10").textContent = result;
 }
 
-document.querySelector('.b-10').addEventListener('click', fn10);
+document.querySelector(".b-10").addEventListener("click", fn10);
 
 //  Task 11
 // Кнопка .b-11 запускає функцію fn11. Функція повинна:
@@ -327,18 +317,17 @@ document.querySelector('.b-10').addEventListener('click', fn10);
 //     one_3_4_two_
 
 function fn11() {
-  const divs11 = document.querySelectorAll('.div-11');
-  let result = '';
+  const divs11 = document.querySelectorAll(".div-11");
+  let result = "";
 
   for (let i = 0; i < divs11.length; i++) {
-    result += divs11[i].innerHTML + '_';
+    result += divs11[i].innerHTML + "_";
   }
 
-  document.querySelector('.out-11').textContent = result;
+  document.querySelector(".out-11").textContent = result;
 }
 
-document.querySelector('.b-11').addEventListener('click', fn11);
-
+document.querySelector(".b-11").addEventListener("click", fn11);
 
 //  Task 12
 // Кнопка .b-12 запускає функцію fn12. Функція повинна:
@@ -348,18 +337,14 @@ document.querySelector('.b-11').addEventListener('click', fn11);
 document.querySelector(".b-12").onclick = fn12;
 
 function fn12() {
-const elems = document.querySelectorAll(".div-12");
-
-function fn12() {
-  const elems = document.querySelectorAll('.div-12');
+  const elems = document.querySelectorAll(".div-12");
 
   for (let i = 0; i < elems.length; i++) {
-    elems[i].style.background = 'orange';
+    elems[i].style.background = "orange";
   }
 }
 
-document.querySelector('.b-12').addEventListener('click', fn12);
-
+document.querySelector(".b-12").addEventListener("click", fn12);
 
 //  Task 13
 // За допомогою циклу привласніть всім input .i-13 value рівне:
@@ -373,17 +358,14 @@ function fn13() {
 
   for (let i = 0; i < inputs.lengt; i++) {
     inputs[i].value = i + 1;
-    
   }
-
 }
 
-const inputs13 = document.querySelectorAll('.i-13');
+const inputs13 = document.querySelectorAll(".i-13");
 
 for (let i = 0; i < inputs13.length; i++) {
   inputs13[i].value = i + 1;
 }
-
 
 //  Task 14
 // Кнопка .b-14 запускає функцію fn14. Функція повинна:
@@ -396,8 +378,8 @@ for (let i = 0; i < inputs13.length; i++) {
 // const out14 = document.querySelector(".out-14");
 
 function fn14() {
-  const elems = document.querySelectorAll('.i-14');
-  let result = '';
+  const elems = document.querySelectorAll(".i-14");
+  let result = "";
 
   for (let i = 0; i < elems.length; i++) {
     if (elems[i].checked) {
@@ -405,11 +387,10 @@ function fn14() {
     }
   }
 
-  document.querySelector('.out-14').textContent = result;
+  document.querySelector(".out-14").textContent = result;
 }
 
-document.querySelector('.b-14').addEventListener('click', fn14);
-
+document.querySelector(".b-14").addEventListener("click", fn14);
 
 //  Task 15
 // Кнопка .b-15 запускає функцію fn15. Функція повинна виводити наступну послідовність в .out-15:
@@ -417,14 +398,13 @@ document.querySelector('.b-14').addEventListener('click', fn14);
 // Підказка (10 - i) + '_' + i + '_'
 
 function fn15() {
-  let result = '';
+  let result = "";
 
   for (let i = 0; i <= 10; i++) {
-    result += (10 - i) + '_' + i + '_';
+    result += 10 - i + "_" + i + "_";
   }
 
-  document.querySelector('.out-15').textContent = result;
+  document.querySelector(".out-15").textContent = result;
 }
 
-document.querySelector('.b-15').addEventListener('click', fn15);
-
+document.querySelector(".b-15").addEventListener("click", fn15);
