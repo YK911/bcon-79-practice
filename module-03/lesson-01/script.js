@@ -14,14 +14,12 @@ const btn2 = document.querySelector(".b-2");
 const ar2 = ["random", true, 2, 15, -5];
 btn2.onclick = fn2;
 function fn2() {
-const out2 = document.querySelector(".out-2");
-out2.textContent = `[${ar1}]`;
-
+  const out2 = document.querySelector(".out-2");
+  out2.textContent = `[${ar1}]`;
 }
 
-
 const btn2 = document.querySelector(".b-2");
-const ar2 = ["random", true, 2, 15, -5];
+// const ar2 = ["random", true, 2, 15, -5];
 
 btn2.onclick = fn2;
 
@@ -36,14 +34,14 @@ function fn2() {
 
 // Task-3
 const btn3 = document.querySelector(".b-3");
-const ar3 = ["random", true, 2, 15, -5];
+// const ar3 = ["random", true, 2, 15, -5];
 
 btn3.onclick = fn3;
 
 function fn3() {
-const out3 = document.querySelector(".out-3");
+  const out3 = document.querySelector(".out-3");
 
-out3.textContent = ar3.length;
+  out3.textContent = ar3.length;
 }
 
 const btn3 = document.querySelector(".b-3");
@@ -65,36 +63,33 @@ const ar4 = Array.from(Array(10).keys(), x => x + 1);
 btn4.onclick = fn4;
 
 function fn4() {
-const out4 = document.querySelector(".out-4");
+  const out4 = document.querySelector(".out-4");
 
-out4.textContent = `${ar4[0]} ${ar4[3]} ${ar4[8]}`;
+  out4.textContent = `${ar4[0]} ${ar4[3]} ${ar4[8]}`;
 }
 
-
 const btn4 = document.querySelector(".b-4");
-const ar4 = Array.from(Array(10).keys(), x => x + 1);
+// const ar4 = Array.from(Array(10).keys(), x => x + 1);
 
 btn4.onclick = fn4;
 
 function fn4() {
   const out4 = document.querySelector(".out-4");
-  
+
   out4.textContent = `${ar4[0]}${ar4[3]}${ar4[8]}`;
 }
 
 // Task-5
 const btn5 = document.querySelector(".b-5");
-const ar5 = Array.from(Array(10).keys(), x => (x + 1)*10);
+// const ar5 = Array.from(Array(10).keys(), x => (x + 1) * 10);
 
 btn5.onclick = fn5;
 
 function fn5() {
-const out5 = document.querySelector(".out-5");
+  const out5 = document.querySelector(".out-5");
 
-out5.textContent = `${ar5[0]} ${ar5[2]} ${ar5[3]}`;
+  out5.textContent = `${ar5[0]} ${ar5[2]} ${ar5[3]}`;
 }
-
-
 
 const btn5 = document.querySelector(".b-5");
 const ar5 = Array.from(Array(10).keys(), x => (x + 1) * 10);
@@ -103,10 +98,9 @@ btn5.onclick = fn5;
 
 function fn5() {
   const out5 = document.querySelector(".out-5");
-  
+
   out5.textContent = ar5[0] + ar5[2] + ar5[3];
 }
-
 
 // Task-6
 
@@ -116,13 +110,13 @@ const ar6 = ["Olexy", "Teresy", "Monday", "April"];
 btn6.onclick = fn6;
 
 function fn6() {
-const out6 = document.querySelector(".out-6");
-let result = "";
-// for (const item of ar6) {
-// let result += item + "";
-// }
+  const out6 = document.querySelector(".out-6");
+  let result = "";
+  // for (const item of ar6) {
+  // let result += item + "";
+  // }
 
- out6.textContent = ar6.join(" ");
+  out6.textContent = ar6.join(" ");
 }
 // Task-7 задача прописати через цикл for( of )
 const btn7 = document.querySelector(".b-7");
@@ -131,19 +125,19 @@ const ar7 = [];
 btn7.onclick = f7;
 
 function f7() {
-const out7 = document.querySelector(".out-7");
-let result = "";
-ar7[7] = "vietnam";
-ar7[6] = "turkey";
-ar7[5] = "italy"
+  const out7 = document.querySelector(".out-7");
+  let result = "";
+  ar7[7] = "vietnam";
+  ar7[6] = "turkey";
+  ar7[5] = "italy";
 
-for (const item of ar7) {
-  result += item + " ";
-}
-out7.textContent = result;
-}  //видаватиме  indefined на перші 4 елементи. Слід прописати цикл тільки для 5-7 елемент без  of
+  for (const item of ar7) {
+    result += item + " ";
+  }
+  out7.textContent = result;
+} //видаватиме  indefined на перші 4 елементи. Слід прописати цикл тільки для 5-7 елемент без  of
 
-// Task-8 
+// Task-8
 // const btn8 = document.querySelector(".b-8");
 // const arr8 = [];
 
@@ -172,7 +166,7 @@ btn8.onclick = fn8;
 function fn8() {
   const out8 = document.querySelector(".out-8");
   const out81 = document.querySelector(".out-8-1");
-  
+
   let result = "";
   ar8[3] = 3.14;
   ar8[4] = 17;
@@ -181,12 +175,11 @@ function fn8() {
   for (const item of ar8) {
     result += `${item}-`;
   }
-out8.textContent = result;
-out81.textContent = ar8.length;
+  out8.textContent = result;
+  out81.textContent = ar8.length;
 }
 
 // Task-9
-
 
 const btn9 = document.querySelector(".b-9");
 const ar9 = document.querySelector(".out-9");
@@ -196,29 +189,25 @@ const out9 = document.querySelector(".out-9");
 
 // btn8.onclick = fn8;
 
- function fn9() {
-const last
-// }
-// Task-10
-
-
-
-function f10() {
-  const lastI = ar10.length - 1;
-  const out11 = document.querySelector
+function fn9() {
+  // const last;
 }
+// Task-10
+/* const f10(){
+  const lastI = ar10.
+} */
 // Task-11
-
-const ar11 = [2, 3, 4, 5, 6, 7];
+/* const ar 11 = [2, 3, 4, 5, 6, 7];
 const btn11 = document.querySelector(".b-11");
 const out11 = document.querySelector(".out-11");
 
-btn12.onclick = f11;
 
+btn1.onclick = f11;
 
 function f11() {
-  
-}
+  const a1 = arl11[2];
+  arll[2] = arl[11];
+   */
 // Task-12
 
 const ar12 = ["test", "west", "list", "class", "best"];
@@ -227,29 +216,23 @@ const out12 = document.querySelector(".out-12");
 
 btn12.onclick = f12;
 
-
 function f12() {
+  let result = "";
 
-let result = "";
+  const firstEl = ar12.at(0);
+  const lastEl = ar12.at(-1);
+  ar12[0] = lastEl;
+  ar12[ar12.length - 1] = firstEl;
 
-const firstEl = ar12.at(0);
-const lastEl = ar12.at(-1);
-ar12[0] = lastEl;
-ar12[ar12.length - 1] = firstEl;
+  // const a1 = ar12[0];
+  // const lastI = ar12.length - 1;
+  // ar12[0] = lastI;
+  // ar12[lastI] = a1;
 
-
-
-
-// const a1 = ar12[0];
-// const lastI = ar12.length - 1;
-// ar12[0] = lastI;
-// ar12[lastI] = a1;
-
-for (let i = 0; i < ar12.length; i++) {
-  result += ar12[i] + " ";
-  
-}
-out12.textContent = result;
+  for (let i = 0; i < ar12.length; i++) {
+    result += ar12[i] + " ";
+  }
+  out12.textContent = result;
 }
 
 // Task-13
@@ -260,15 +243,12 @@ const out13 = document.querySelector(".out-13");
 btn13.onclick = f13;
 
 function f13() {
-
   let result = "";
   for (let i = 0; i < ar13.length; i++) {
     result += i + " " + ar13[i] + " ";
-
-    
   }
 
-out13.textContent = result;
+  out13.textContent = result;
 }
 
 // Task-14
@@ -280,17 +260,13 @@ const out14 = document.querySelector(".out-14");
 btn14.onclick = f14;
 
 function f14() {
-
   let result = "";
   for (let i = ar14.length - 1; i >= 0; i--) {
     result += ar14[i] + " ";
-
-    
   }
 
-out14.textContent = result;
+  out14.textContent = result;
 }
-
 
 // Task-15
 
@@ -301,7 +277,6 @@ const out15 = document.querySelector(".out-15");
 btn14.onclick = f15;
 
 function f15() {
-
   let result = "";
   for (let i = 0; i < ar15.length; i++) {
     if (ar15[i] > 0) {
@@ -309,7 +284,7 @@ function f15() {
     }
   }
 
-out15.textContent = result;
+  out15.textContent = result;
 }
 
 // Task-16
@@ -325,54 +300,80 @@ function f16() {
   let ar16_odd = [];
   let ar16_even = [];
 
-// ar16_even[3] = 222 reminde
-let oddCounter = 0;
-let evenCounter = 0;
+  // ar16_even[3] = 222 reminde
+  let oddCounter = 0;
+  let evenCounter = 0;
 
   for (let i = 0; i < ar16.length; i++) {
-
     if (ar16[i] % 2 === 0) {
       ar16_even[evenCounter] = ar16[i];
       evenCounter += 1; //++
-    //2 ------   ar16_even.push(ar16[i]);
+      //2 ------   ar16_even.push(ar16[i]);
     } else {
       ar16_odd[oddCounter] = ar16[i];
       oddCounter += 1;
-    // 2------  ar16_odd.push(ar16[i]);
-    // }
-   
+      // 2------  ar16_odd.push(ar16[i]);
+    }
   }
 
-// 2-----out161.textContent = ar16_even;
-// 2------out162.textContent = ar16_odd;
+  // 2-----out161.textContent = ar16_even;
+  // 2------out162.textContent = ar16_odd;
 }
 
 // Task-17
 
-const ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0]];
+const ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
 const btn17 = document.querySelector(".b-17");
 const out17 = document.querySelector(".out-17");
 
 btn17.onclick = f17;
 
 function f17() {
-
   // 2 -------  let counter = 0;
   let filteredar17 = [];
   for (let i = 0; i < ar17.length; i++) {
     if (ar17[i] > 3) {
-      // counter++ 
+      // counter++
       filteredar17.push(ar17[i]);
     }
   }
 
-// out17.textContent = counter;
-out17.textContent = filteredar17.length;
+  // out17.textContent = counter;
+  out17.textContent = filteredar17.length;
 }
 // 3     17.filter(n => n > 3).length
 
 // Task-18
+const ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
+const btn18 = document.querySelector(".b-18");
+const out18 = document.querySelector(".out-18");
+console.log(ar18.length);
+btn18.onclick = fn18;
+let max = ar18[0]; //78  24 перезаписали на 78
+for (let i = 1; i < ar18.length; i++) {
+  //step 4: i=4 i < 8
+  const element = ar18[i]; // ar18[5] = 4
+  if (element < max) {
+    max = element;
+  }
+}
+out18.textContent = max;
 
 // Task-19
 
+const ar19 = [15, 424, 313, 78, 241, 4, 45, 67];
+const btn19 = document.querySelector();
 // Task-20
+const ar20 = [4, 5, 6, 7, 8, 9, 10];
+const btn20 = document.querySelector(".b-20");
+const out20 = document.querySelector(".out-20");
+
+btn20.onclick = fn20;
+function fn20() {
+  const sum = 0;
+  for (let i = 0; i < ar20; i++) {
+    const element = ar20[i];
+    sum += element;
+  }
+  out20.textContent = sum;
+}
